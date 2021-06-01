@@ -11,3 +11,84 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.wrapper{
+  padding-top: 5rem;
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.itmBtn {
+  background-color: #16a316;
+  border-radius: 5px;
+  color: #ffffff;
+  border: 2px solid #83d500;
+  box-shadow: 0 1px 3px 0 #3531319c;
+  transition: box-shadow .3s ease-in-out;
+  cursor:pointer;
+}
+.itmBtn:active {
+  box-shadow: 0 0 0 0 #3531319c;
+  transition: box-shadow .3s ease-in-out;
+}
+
+.itmBtn:hover{
+  border: 2px solid #f50202;
+  transition: border .3s ease-in-out;
+}
+.completed{
+  text-decoration:  line-through;
+}
+.subBtn{
+  background-color: #16a316;
+  color: #ffffff;
+  border: 2px solid #83d500;
+  transition: border .3s ease-in-out;
+}
+.subBtn:active{
+  border-style: inset;
+  transition: border-style .3s ease-in-out;
+}
+
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  box-shadow: -2px 1px 3px 0 #37333329;
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  box-shadow: 0 1px 3px 0 #37333329;
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  box-shadow: 2px 1px 3px 0 #37333329;
+  left: 56px;
+  animation-delay: 0s;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
